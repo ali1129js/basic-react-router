@@ -2,7 +2,7 @@
  * @Author: Ali Ismail
  * @Date:   2018-04-15T16:34:41+02:00
  * @Last modified by:   Ali Ismail
- * @Last modified time: 2018-04-22T01:22:57+02:00
+ * @Last modified time: 2018-04-22T15:04:28+02:00
  */
  import React, { Component } from 'react'
  import {
@@ -26,6 +26,11 @@
  const Topics = ({ match }) => (
    <div>
      <h2>Topics</h2>
+     <ul>
+      <li><Link to='/topics/rendering'>  </Link></li>
+      <li><Link to='/topics/blllah'>  </Link></li>
+      <li><Link to='/topics/whatev'>  </Link></li>   
+     </ul>
    </div>
  )
 
