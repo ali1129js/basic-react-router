@@ -2,7 +2,7 @@
  * @Author: Ali Ismail
  * @Date:   2018-04-15T16:34:41+02:00
  * @Last modified by:   Ali Ismail
- * @Last modified time: 2018-04-23T14:28:37+02:00
+ * @Last modified time: 2018-04-23T14:37:10+02:00
  */
  import React, { Component } from 'react'
  import {
@@ -22,7 +22,7 @@
    </div>
  )
  const Topic = ({match}) =>
- console.log(match) || (
+  (
    <div>
      <h3>
        {match.params.topicId}
@@ -30,22 +30,22 @@
    </div>
  )
 
- const Topics = () => (
+ const Topics = ({match}) => (
   <div>
     <h2>Topics</h2>
     <ul>
       <li>
-        <Link to='/topics/rendering'>
+        <Link to={`${match.url}/rendering`}>
           Rendering with React
         </Link>
       </li>
       <li>
-        <Link to='/topics/components'>
+        <Link to={`${match.url}/components`}>
           Components
         </Link>
       </li>
       <li>
-        <Link to='/topics/props-v-state'>
+        <Link to={`${match.url}/props-v-state`}>
           Props v. State
         </Link>
       </li>
