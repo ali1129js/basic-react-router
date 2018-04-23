@@ -2,7 +2,7 @@
  * @Author: Ali Ismail
  * @Date:   2018-04-15T16:34:41+02:00
  * @Last modified by:   Ali Ismail
- * @Last modified time: 2018-04-23T14:37:10+02:00
+ * @Last modified time: 2018-04-23T14:45:40+02:00
  */
  import React, { Component } from 'react'
  import {
@@ -51,6 +51,9 @@
       </li>
     </ul>
      <Route path='/topics/:topicId' component={Topic} />
+     <Route exact path={match.url} render={() => (
+      <h3> Please select a Topic </h3>
+     )}  />
     </div>
  )
  class App extends Component {
